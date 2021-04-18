@@ -1,19 +1,14 @@
 <div class="ui inverted segment">
   <div class="ui inverted secondary menu centered grid">
-    <a class="item">
-      Home
-    </a>
+      <%= link_to 'Home', root_path, class: 'item' %>
     <a class="item">
       Mis Contactos
     </a>
     <a class="item">
       Mis Archivos
     </a>
-    <a class="item">
-      Log in
-    </a>
-    <a class="item">
-      Log out
-    </a>
+      <%= link_to 'Log in', new_user_session_path, class: 'item' %>
+      <%= link_to 'Log out', destroy_user_session_path, class: 'item' %>
+      <%= link_to 'Registarte', new_user_registration_path, class: 'item' %>
   </div>
 </div>
